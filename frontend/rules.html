@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firewall Rules</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo-section">
+            <h2>COMPLIBOT</h2>
+            <p>Firewall Automation Platform</p>
+        </div>
+
+        <nav class="menu">
+            <a href="dashboard.html" class="menu-item">Dashboard</a>
+            <a href="bot.html" class="menu-item">CompliBot AI</a>
+            <a href="rules.html" class="menu-item active">Firewall Rules</a>
+            <a href="logs.html" class="menu-item">Audit Logs</a>
+        </nav>
+
+    </aside>
+
+    <main class="main-content">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <div class="page-title">
+                <h1>Firewall Rules</h1>
+                <p>Manage deployed firewall policies</p>
+            </div>
+
+            <button class="btn-neon">
+                + Create Rule
+            </button>
+
+        </header>
+
+        <!-- Stats -->
+        <section class="stats-container">
+
+            <div class="stat-card">
+                <h3>Total Rules</h3>
+                <h1 id="totalRules">0</h1>
+            </div>
+
+            <div class="stat-card">
+                <h3>Active Rules</h3>
+                <h1 class="success" id="activeRules">0</h1>
+            </div>
+
+            <div class="stat-card">
+                <h3>Disabled Rules</h3>
+                <h1 class="warning" id="disabledRules">0</h1>
+            </div>
+
+            <div class="stat-card">
+                <h3>High Risk</h3>
+                <h1 class="danger" id="highRiskRules">0</h1>
+            </div>
+
+        </section>
+
+        <!-- Filters -->
+        <section class="filters">
+
+            <input
+                type="text"
+                placeholder="Search rules..."
+                class="search-box"
+                id="searchInput"
+            >
+
+            <select>
+                <option value="">Status</option>
+                <option value="active">Active</option>
+                <option value="disabled">Disabled</option>
+            </select>
+
+            <select>
+                <option value="">Protocol</option>
+                <option value="tcp">TCP</option>
+                <option value="udp">UDP</option>
+            </select>
+
+            <select>
+                <option value="">Action</option>
+                <option value="allow">Allow</option>
+                <option value="deny">Deny</option>
+            </select>
+
+        </section>
+
+        <!-- Rules Table -->
+        
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Source</th>
+                        <th>Destination</th>
+                        <th>Port</th>
+                        <th>Protocol</th>
+                        <th>Action</th>
+                        <th>Risk</th>
+                        <th>Status</th>
+                        <th>Firewall</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="rulesTableBody">
+
+                   
+                </tbody>
+
+            </table>
+
+       
+
+    </main>
+<script src="js/rules.js"></script>
+</body>
+</html>

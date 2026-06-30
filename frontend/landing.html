@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CompliBot | AI Firewall Automation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/landing.css">
+</head>
+<body>
+
+<div class="grid-bg"></div>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <div class="logo-dot"></div>
+        COMPLIBOT
+    </div>
+    <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#workflow">Workflow</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="dashboard.html" class="launch-btn">Launch Platform →</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-inner">
+
+        <div class="hero-left reveal">
+            <div class="badge">
+                <div class="badge-dot"></div>
+                AI POWERED FIREWALL AUTOMATION
+            </div>
+            <h1>Automate Firewall<br>Decisions with<br><em>Artificial Intelligence</em></h1>
+            <p class="hero-desc">
+                CompliBot validates policies, calculates risk scores, and deploys approved
+                rules automatically — with a full audit trail for compliance.
+            </p>
+            <div class="hero-buttons">
+                <a href="dashboard.html" class="btn-primary">Get Started</a>
+                <a href="#features" class="btn-ghost">See how it works</a>
+            </div>
+        </div>
+
+        <div class="hero-right reveal" style="transition-delay:.15s">
+            <div class="terminal-glow"></div>
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="t-dots">
+                        <div class="t-dot" style="background:#ff5f57"></div>
+                        <div class="t-dot" style="background:#febc2e"></div>
+                        <div class="t-dot" style="background:#28c840"></div>
+                    </div>
+                    <div class="t-title">COMPLIBOT AI — REQUEST LOG</div>
+                    <div class="t-version">v2.1.0</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="t-line active">
+                        <span class="t-icon">›</span>
+                        Allow HTTPS from HR Network to Web Server
+                    </div>
+                    <hr class="t-divider">
+                    <div class="t-line ok"><span class="t-icon">✓</span> Policy check passed</div>
+                    <div class="t-line ok"><span class="t-icon">✓</span> No conflicting rules found</div>
+                    <div class="t-line warn"><span class="t-icon">⚠</span> Port 443 — verify certificate</div>
+                    <hr class="t-divider">
+                    <div class="t-line muted">Risk score</div>
+                    <div class="t-score">
+                        <div class="t-score-num">20</div>
+                        <div class="t-score-bar"><div class="t-score-fill"></div></div>
+                        <div class="t-score-max">/ 100</div>
+                    </div>
+                    <div class="status-badge">
+                        <div class="status-dot"></div>
+                        APPROVED — DEPLOYED TO FIREWALL
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Stats bar -->
+<div class="stats-row reveal">
+    <div class="stat">
+        <div class="stat-num">99.7%</div>
+        <div class="stat-label">UPTIME SLA</div>
+    </div>
+    <div class="stat">
+        <div class="stat-num">&lt;200ms</div>
+        <div class="stat-label">RULE DEPLOY TIME</div>
+    </div>
+    <div class="stat">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">AUDIT COVERAGE</div>
+    </div>
+</div>
+
+<!-- Features -->
+<section id="features" class="features">
+    <div class="section-header reveal">
+        <div class="section-eyebrow">Platform Capabilities</div>
+        <h2>Everything you need to automate firewall security</h2>
+    </div>
+    <div class="feature-grid reveal">
+        <div class="card">
+            <div class="card-icon">🤖</div>
+            <h3>AI Assistant</h3>
+            <p>Understands natural language firewall requests and translates them into validated rule sets without manual parsing.</p>
+            <div class="card-tag">NLP → RULE ENGINE</div>
+        </div>
+        <div class="card">
+            <div class="card-icon">🛡</div>
+            <h3>Policy Engine</h3>
+            <p>Detects violations, insecure configurations, and conflicts against your organization's security baseline before deployment.</p>
+            <div class="card-tag">ZERO TRUST READY</div>
+        </div>
+        <div class="card">
+            <div class="card-icon">⚠️</div>
+            <h3>Risk Engine</h3>
+            <p>Calculates dynamic risk scores per request, factoring in source, destination, protocol, and historical threat data.</p>
+            <div class="card-tag">0 – 100 SCORING</div>
+        </div>
+        <div class="card">
+            <div class="card-icon">🚀</div>
+            <h3>Rule Deployment</h3>
+            <p>Auto-deploys approved rules to your firewall in under 200ms, with instant rollback on policy drift detection.</p>
+            <div class="card-tag">AUTO ROLLBACK</div>
+        </div>
+        <div class="card">
+            <div class="card-icon">📊</div>
+            <h3>Live Dashboard</h3>
+            <p>Visualize request volume, approval rates, risk distribution, and active rules across all your firewall policies.</p>
+            <div class="card-tag">REAL-TIME METRICS</div>
+        </div>
+        <div class="card">
+            <div class="card-icon">📝</div>
+            <h3>Audit Logs</h3>
+            <p>Immutable, timestamped audit trail of every decision — who requested it, what was checked, and what was deployed.</p>
+            <div class="card-tag">SOC2 / ISO 27001</div>
+        </div>
+    </div>
+</section>
+
+<!-- Workflow -->
+<section id="workflow" class="workflow">
+    <div class="section-header reveal" style="text-align:center">
+        <div class="section-eyebrow">How It Works</div>
+        <h2>From natural language to deployed rule in seconds</h2>
+        <p class="section-sub">Every request passes through a deterministic pipeline — parsed, validated, scored, and deployed with no human bottleneck.</p>
+    </div>
+    <div class="flow reveal">
+        <div class="flow-step"><div class="flow-num">01</div><div class="flow-label">User Request</div></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step"><div class="flow-num">02</div><div class="flow-label">NLP Parser</div></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step"><div class="flow-num">03</div><div class="flow-label">Policy Check</div></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step"><div class="flow-num">04</div><div class="flow-label">Risk Score</div></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step"><div class="flow-num">05</div><div class="flow-label">Decision</div></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step"><div class="flow-num">06</div><div class="flow-label">Deploy</div></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step"><div class="flow-num">07</div><div class="flow-label">Audit Log</div></div>
+    </div>
+</section>
+
+<!-- Architecture -->
+<section id="architecture" class="architecture">
+    <div class="section-header reveal" style="text-align:center;margin-bottom:52px">
+        <div class="section-eyebrow">System Architecture</div>
+        <h2>Built for enterprise-grade security automation</h2>
+    </div>
+    <div class="arch-diagram reveal">
+        <div class="arch-row">
+            <span class="arch-name">User Interface</span>
+            <span class="arch-badge badge-ai">BROWSER / API</span>
+        </div>
+        <div class="arch-arrow-row">↓</div>
+        <div class="arch-row">
+            <span class="arch-name">CompliBot AI</span>
+            <span class="arch-badge badge-ai">NLP + INTENT</span>
+        </div>
+        <div class="arch-arrow-row">↓</div>
+        <div class="arch-row">
+            <span class="arch-name">Parser Engine</span>
+            <span class="arch-badge badge-engine">RULE EXTRACTION</span>
+        </div>
+        <div class="arch-arrow-row">↓</div>
+        <div class="arch-row">
+            <span class="arch-name">Policy Engine</span>
+            <span class="arch-badge badge-engine">VALIDATION</span>
+        </div>
+        <div class="arch-arrow-row">↓</div>
+        <div class="arch-row">
+            <span class="arch-name">Risk Engine</span>
+            <span class="arch-badge badge-engine">SCORING</span>
+        </div>
+        <div class="arch-arrow-row">↓</div>
+        <div class="arch-row">
+            <span class="arch-name">Decision Engine</span>
+            <span class="arch-badge badge-ai">APPROVE / DENY</span>
+        </div>
+        <div class="arch-arrow-row">↓</div>
+        <div class="arch-row">
+            <span class="arch-name">Firewall Deployment</span>
+            <span class="arch-badge badge-engine">PUSH RULES</span>
+        </div>
+        <div class="arch-arrow-row">↓</div>
+        <div class="arch-row">
+            <span class="arch-name">MongoDB + Dashboard</span>
+            <span class="arch-badge badge-storage">AUDIT STORE</span>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <div class="cta-inner reveal">
+        <div class="section-eyebrow" style="text-align:center">Get Started</div>
+        <h2>Secure your network with AI</h2>
+        <p>Eliminate manual firewall reviews and reduce deployment time from hours to milliseconds. CompliBot handles the complexity — you set the policy.</p>
+        <a href="dashboard.html" class="btn-primary btn-large">Launch CompliBot →</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-logo">COMPLIBOT</div>
+    <span>© 2026 CompliBot · AI Powered Firewall Automation</span>
+    <span class="footer-version">v2.1.0</span>
+</footer>
+
+<script>
+    const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible') })
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>

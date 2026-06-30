@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompliBot AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo-section">
+            <h2>COMPLIBOT</h2>
+            <p>Firewall Automation Platform</p>
+        </div>
+
+        <nav class="menu">
+            <a href="dashboard.html" class="menu-item">Dashboard</a>
+            <a href="bot.html" class="menu-item active">CompliBot AI</a>
+            <a href="rules.html" class="menu-item">Firewall Rules</a>
+            <a href="logs.html" class="menu-item">Audit Logs</a>
+        </nav>
+
+    </aside>
+
+    <main class="main-content">
+
+        <!-- Top Bar -->
+        <header class="topbar">
+
+            <div class="page-title">
+                <h1>CompliBot AI</h1>
+                <p>AI Powered Firewall Decision Engine</p>
+            </div>
+
+            <button class="btn-neon">
+                AI Engine 🟢 Online
+            </button>
+
+        </header>
+
+        <!-- Main Bot Area -->
+        <section class="bot-grid">
+
+            <!-- Chat Section -->
+            <div class="chat-panel">
+
+                <div class="chat-messages" id="chatMessages">
+
+                    <div class="bot-message">
+                        👋 Welcome to CompliBot.
+
+                        Describe the firewall rule you would like to create and I will analyze it, validate policies, and deploy it if approved.
+                    </div>
+
+                </div>
+
+                <div class="suggestions">
+
+                    <button class="chip">
+                        Allow HTTPS from HR Network
+                    </button>
+
+                    <button class="chip">
+                        Block Telnet
+                    </button>
+
+                    <button class="chip">
+                        Allow SSH from Admin Network
+                    </button>
+
+                    <button class="chip">
+                        Allow RDP from Any
+                    </button>
+
+                </div>
+
+                <div class="chat-input">
+
+                    <input
+                        type="text"
+                        id="messageInput"
+                        placeholder="Describe your firewall request..."
+                    >
+
+                    <button
+                        class="btn-neon"
+                        id="sendBtn"
+                    >
+                        Send
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Decision Panel -->
+            <div class="decision-panel">
+
+                <div class="decision-card">
+
+                    <h3>Decision</h3>
+                    <p id="decisionStatus">Awaiting Request</p>
+
+                </div>
+
+                <div class="decision-card">
+
+                    <h3>Risk Score</h3>
+                    <h2 id="riskScore">0/100</h2>
+
+                </div>
+
+                <div class="decision-card">
+
+                    <h3>Policy Violations</h3>
+
+                    <ul id="violationsList">
+                        <li>No analysis yet.</li>
+                    </ul>
+
+                </div>
+
+                <div class="decision-card">
+
+                    <h3>Recommendation</h3>
+
+                    <p id="recommendation">
+                        Submit a request to begin analysis.
+                    </p>
+
+                </div>
+
+                <div class="decision-card">
+
+                    <h3>Firewall Status</h3>
+
+                    <p id="firewallStatus">
+                        No action taken.
+                    </p>
+
+                </div>
+
+                <div class="decision-card">
+
+                    <h3>Parsed Rule</h3>
+
+                        <pre id="parsedRule">
+                        Action:
+                        Source:
+                        Destination:
+                        Port:
+                        Protocol:
+                        </pre>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+<script src="js/bot.js"></script>
+</body>
+</html>

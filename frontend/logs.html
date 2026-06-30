@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Audit Logs</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+
+        <div class="logo-section">
+            <h2>COMPLIBOT</h2>
+            <p>Firewall Automation Platform</p>
+        </div>
+
+        <nav class="menu">
+            <a href="dashboard.html"
+               class="menu-item">
+               Dashboard
+            </a>
+
+            <a href="bot.html"
+               class="menu-item">
+               CompliBot AI
+            </a>
+
+            <a href="rules.html"
+               class="menu-item">
+               Firewall Rules
+            </a>
+
+            <a href="logs.html"
+               class="menu-item active">
+               Audit Logs
+            </a>
+        </nav>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div class="page-title">
+                <h1>Audit Logs</h1>
+                <p>
+                    Track every firewall
+                    decision and deployment.
+                </p>
+            </div>
+
+            <button
+                class="btn-neon"
+                id="refreshBtn">
+                Refresh
+            </button>
+
+        </header>
+
+        <!-- Stats -->
+
+        <section class="stats-container">
+
+            <div class="stat-card">
+                <h3>Total Logs</h3>
+                <h1 id="totalLogs">
+                    0
+                </h1>
+            </div>
+
+            <div class="stat-card">
+                <h3>Approved</h3>
+                <h1
+                    class="success"
+                    id="approvedLogs">
+                    0
+                </h1>
+            </div>
+
+            <div class="stat-card">
+                <h3>Rejected</h3>
+                <h1
+                    class="danger"
+                    id="rejectedLogs">
+                    0
+                </h1>
+            </div>
+
+            <div class="stat-card">
+                <h3>High Risk</h3>
+                <h1
+                    class="warning"
+                    id="highRiskLogs">
+                    0
+                </h1>
+            </div>
+
+        </section>
+
+        <!-- Filters -->
+
+        <section class="filters">
+
+            <input
+                type="text"
+                class="search-box"
+                id="searchInput"
+                placeholder="Search logs..."
+            >
+
+            <select
+                id="decisionFilter">
+
+                <option value="">
+                    Decision
+                </option>
+
+                <option value="APPROVED">
+                    Approved
+                </option>
+
+                <option value="REJECTED">
+                    Rejected
+                </option>
+
+            </select>
+
+            <select
+                id="severityFilter">
+
+                <option value="">
+                    Severity
+                </option>
+
+                <option value="low">
+                    Low
+                </option>
+
+                <option value="medium">
+                    Medium
+                </option>
+
+                <option value="high">
+                    High
+                </option>
+
+            </select>
+
+        </section>
+
+        <!-- Logs Table -->
+
+        <section
+            class="rules-table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Time</th>
+                        <th>Request</th>
+                        <th>Decision</th>
+                        <th>Risk</th>
+                        <th>Firewall</th>
+                        <th>Violations</th>
+                        
+                    </tr>
+
+                </thead>
+
+                <tbody
+                    id="logsTableBody">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="js/logs.js"></script>
+
+</body>
+</html>

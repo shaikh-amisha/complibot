@@ -1,0 +1,32 @@
+.stats-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-bottom:30px;
+}
+
+.stat-card h3{
+    color:var(--gray);
+    font-size:15px;
+    margin-bottom:15px;
+}
+
+.stat-card h1{
+    font-size:40px;
+    color:var(--neon-blue);
+}
+
+.charts-section{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+    margin-bottom:30px;
+}
+
+.chart-card{
+    min-height:350px;
+}
+
+.recent-activity{
+    margin-bottom:30px;
+}
